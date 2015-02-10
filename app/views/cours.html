@@ -1,0 +1,291 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="navbar-header">
+              <a class="navbar-brand">Formation web</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown" dropdown>
+                    <a href class="dropdown-toggle" dropdown-toggle>
+                        1. HTML
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/cours?scrollTo=html-outils">a. Les outils</a></li>
+                        <li><a href="#/cours?scrollTo=html-structure">b. Structure d'une page</a></li>
+                        <li><a href="#/cours?scrollTo=html-balises">c. Balises de base</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" dropdown>
+                    <a href class="dropdown-toggle" dropdown-toggle>
+                        2. CSS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/cours?scrollTo=css-classid">a. class/id</a></li>
+                        <li><a href="#/cours?scrollTo=css-proprietes">b. Propriétés de base</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" dropdown>
+                    <a href class="dropdown-toggle" dropdown-toggle>
+                        3. Bootstrap
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/cours?scrollTo=bootstrap-presentation">a. Présentation</a></li>
+                        <li><a href="#/cours?scrollTo=bootstrap-grille">b. La grille</a></li>
+                        <li><a href="#/cours?scrollTo=bootstrap-construire">c. Codons !</a></li>
+                        <li><a href="#/cours?scrollTo=bootstrap-css">d. Un peu de CSS</a></li>
+                        <li><a href="#/cours?scrollTo=bootstrap-embed">e. Inclure du contenu</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="col-md-12">
+    <h1>1. HTML</h1>
+    <div class="panel panel-default" id="html-outils">
+        <div class="panel-heading">
+            <h3 class="panel-title">a. Les outils</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>Un bloc-note amélioré : <a href="http://www.sublimetext.com/3" target="_blank">Sublime Text</a> ;</li>
+                <li>Un navigateur ;</li>
+                <li><a href="site-vide.zip">Téléchargez les fichiers nécessaires au cours.</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default" id="html-structure">
+        <div class="panel-heading">
+            <h4 class="panel-title">b. Structure d'une page</h4>
+        </div>
+        <div class="panel-body">
+            <b>HTML</b> : ensemble de balises. <code>&lt;balise&gt; bla bla &lt;/balise&gt;</code>
+            <br /><br />
+            <code>&lt;head&gt; &lt;/head&gt;</code> : en-têtes.<br />
+            <code>&lt;body&gt; &lt;/body&gt;</code> : corps/contenu de la page. Écrivez quelque chose.
+            <br /><br />
+            Une balise peut avoir des options, appelées "attributs" : <code>&lt;balise option1="34" option2="Un peu de texte"&gt; &lt;/balise&gt;</code>.<br />
+            Comment lier des pages entre-elles ? La balise <code>&lt;a&gt;</code> permet de faire des liens : <code>&lt;a title="Lien vers Google" href="http://google.com"&gt;Le texte du lien&lt;/a&gt;</code>.
+        </div>
+    </div>
+    <div class="panel panel-default" id="html-balises">
+        <div class="panel-heading">
+            <h3 class="panel-title">c. Les différentes balises de base</h3>
+        </div>
+        <div class="panel-body">
+            <h4>Mise en forme basique</h4>
+            <ul>
+                <li><code>&lt;br /&gt;</code> : retour à la ligne ;</li>
+                <li><code>&lt;strong&gt; &lt;/strong&gt;</code> : mettre en gras ;</li>
+                <li><code>&lt;u&gt; &lt;/u&gt;</code> : souligner ;</li>
+                <li><code>&lt;em&gt; &lt;/em&gt;</code> : mettre en italique ;</li>
+                <li><code>&lt;h1&gt; &lt;/h1&gt;</code> <code>&lt;h2&gt; &lt;/h2&gt;</code> <code>&lt;h3&gt; &lt;/h3&gt;</code> <code>&lt;h4&gt; &lt;/h4&gt;</code> <code>&lt;h5&gt; &lt;/h5&gt;</code> <code>&lt;h6&gt; &lt;/h6&gt;</code> : titres (de très gros à très petit).</li>
+            </ul>
+            <h4>Liste</h4>
+<pre>&lt;ul&gt;
+    &lt;li&gt;Puce 1&lt;/li&gt;
+    &lt;li&gt;Puce 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <h4>Tableau</h4>
+<pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Titre colonne 1&lt;/th&gt;
+        &lt;th&gt;Titre colonne 2&lt;/th&gt;
+        &lt;th&gt;Titre colonne 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ligne 1, Colonne 1&lt;/td&gt;
+        &lt;td&gt;Ligne 1, Colonne 2&lt;/td&gt;
+        &lt;td&gt;Ligne 1, Colonne 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ligne 2, Colonne 1&lt;/td&gt;
+        &lt;td&gt;Ligne 2, Colonne 2&lt;/td&gt;
+        &lt;td&gt;Ligne 2, Colonne 3&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+            <h4>« Multimédia »</h4>
+            <ul>
+                <li><code>&lt;img src="url-de-l-image" /&gt;</code> : insertion d'une image ;</li>
+                <li><code>&lt;audio src="url-du-fichier-audio.mp3" controls&gt;&lt;/audio&gt;</code> : insertion d'un fichier audio.</li>
+            </ul>
+            <br />
+            <h3>Toutes les autres</h3>
+            Utiliser Google ! En bonus : <a href="http://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/memento-des-balises-html" target="_blank">Liste non exhaustive des balises HTML</a>.
+        </div>
+    </div>
+    <br /><br />
+
+    <h1>2. CSS</h1>
+    <div class="panel panel-default" id="css-classid">
+        <div class="panel-heading">
+            <h3 class="panel-title">a. class/id</h3>
+        </div>
+        <div class="panel-body">
+            <strong>CSS :</strong> langage pour styliser les différents éléments/balises de la page. On peut modifier : couleur, couleur de fond, police, bordure (épaisseur, couleur), marges, position, taille...
+            <h4>Comment identifier un élément précis ?</h4>
+            <ul>
+                <li>On peut styliser toutes les balises du même nom :<br />
+<pre>table {
+    color: blue;
+}
+</pre>
+                </li>
+                <li>On ajoute un identifiant <u>unique</u> à une balise : l'attribut <strong>id</strong>.<br />
+                    HTML : <code>&lt;td id="cellule-importante"&gt;</code>. CSS : <br />
+<pre>#cellule-importante {
+    border: 1px solid gray;
+}
+</pre>
+                </li>
+                <li>
+                    On veut modifier plusieurs éléments. On crée une <strong>class</strong> CSS et on l'ajoute aux éléments concernés.<br /><br />
+<pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td class="cellule-peu-importante"&gt;Ligne 1, Colonne 1&lt;/td&gt;
+        &lt;td class="cellule-peu-importante"&gt;Ligne 1, Colonne 2&lt;/td&gt;
+        &lt;td&gt;Ligne 1, Colonne 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ligne 2, Colonne 1&lt;/td&gt;
+        &lt;td&gt;Ligne 2, Colonne 2&lt;/td&gt;
+        &lt;td class="cellule-peu-importante"&gt;Ligne 2, Colonne 3&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+<pre>
+.cellulle-peu-importante {
+    opacity: 0.5;
+}
+</pre>
+                </li>
+            </ul>
+            <h4>Combinons les classes</h4>
+            Un élement HTML peut avoir plusieurs classes, et un id en plus : <code>&lt;img src="super-image.jpg" class="classe1 classe2 classe3" id="imageHeader" /&gt;</code>.<br /><br />
+            <h4><code>&lt;div&gt;</code> et <code>&lt;span&gt;</code></h4>
+            Deux balises html sans signification.<br /><br />
+            <code>&lt;div&gt;</code> correspond à une boite.<br />
+            <code>&lt;span&gt;</code> correspond à un morceau de ligne.
+        </div>
+    </div>
+    <div class="panel panel-default" id="css-proprietes">
+        <div class="panel-heading">
+            <h3 class="panel-title">b. Les propriétés de base</h3>
+        </div>
+        <div class="panel-body">
+            <h4>Sur le texte</h4>
+            <ul>
+                <li><code>color: red|#AABBCC|rgb(234,8,23);</code> : la couleur du texte ;</li>
+                <li><code>font-size: 34px;</code> : la taille ;</li>
+                <li><code>font-family: "Helvetica", "Trebuchet MS", "Verdana";</code> la police (la première trouvée est choisie) ;</li>
+                <li><code>text-decoration: underline;</code> : ajouter du soulignement ;</li>
+                <li><code>font-weight: 600;</code> : épaisseur du texte (100 : fin, 300 : normal, 600 : gras).</li>
+            </ul>
+            <h4>Sur un bloc</h4>
+            <ul>
+                <li><code>margin-top: 4px; margin-bottom: 12px; margin-left: 0px; margin: 5px;</code> : marges extérieures ;</li>
+                <li><code>background-color: gray|#333333|rgb(0, 34, 200);</code> : couleur de fond ;</li>
+                <li><code>height: 300px; width: 90%;</code> : dimensions. Unité : pixels, pourcentage de la largeur totale ;</li>
+                <li><code>text-align: center;</code> : alignement du texte contenu dans le bloc ;</li>
+                <li><code>border-top: 4px solid yellow; border-left: 1px dotted blue;</code> : bordure (épaisseur, style (pointillés ? normal ?), couleur).</li>
+            </ul>
+            <br />
+            <h4>Et les autres ?</h4>
+            Google ! Toujours Google. Mais sinon vous avez par exemple <a href="http://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/memento-des-proprietes-css" target="_blank">ici</a> une liste des propriétés les plus courantes.
+        </div>
+    </div>
+    <br /><br />
+
+    <h1>3. Bootstrap : comment faire un site propre sans effort</h1>
+    <div class="panel panel-default" id="bootstrap-presentation">
+        <div class="panel-heading">
+            <h3 class="panel-title">a. Présentation</h3>
+        </div>
+        <div class="panel-body">
+            <strong><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> :</strong> framework CSS = ensemble de classes CSS. Regardez <code>css/bootstrap.css</code>.<br />
+            Voilà ce qu'on va maintenant réaliser :<br /><br />
+            <img src="images/exo-final.jpg" class="exo-final" />
+        </div>
+    </div>
+    <div class="panel panel-default" id="bootstrap-grille">
+        <div class="panel-heading">
+            <h3 class="panel-title">b. La grille : cette idée géniale</h3>
+        </div>
+        <div class="panel-body">
+            Placement des différents blocs ? Menu à gauche ? Dimensions ? Marges entre les éléments ?<br /><br />
+            Bootstrap découpe la page en 12 colonnes. Tableau invisible pour organiser les élements.<br /><br />
+<pre>&lt;div class="container"&gt; &lt;!-- Toute la page dans un "container" --&gt;
+    &lt;div class="row"&gt; &lt;!-- Je créé une ligne --&gt;
+        &lt;div class="col-sm-4"&gt; &lt;!-- Ce bloc prend 4 colonnes --&gt;
+            Mon menu
+        &lt;/div&gt;
+        &lt;div class="col-sm-8"&gt; &lt;!-- Celui-ci prend les 8 suivantes --&gt;
+            Mon contenu
+        &lt;/div&gt;
+    &lt;/div&gt; &lt;!-- J'ai 12 colonnes, je ferme ma ligne --&gt;
+    &lt;!-- Je peux recommencer ici --&gt;
+&lt;/div&gt;
+</pre>
+        </div>
+    </div>
+    <div class="panel panel-default" id="bootstrap-exo">
+        <div class="panel-heading">
+            <h3 class="panel-title">c. Codons !</h3>
+        </div>
+        <div class="panel-body">
+            <ol>
+                <li>Menu/contenu</li>
+                <li>Le menu : <a href="http://getbootstrap.com/components/#nav" target="_blank">Nav</a> ;</li>
+                <li>Le contenu : <a href="http://getbootstrap.com/components/#panels" target="_blank">Nanel</a> ;</li>
+                <li>La barre de connexion : <a href="http://getbootstrap.com/components/#navbar" target="_blank">Navbar</a> + <a href="http://getbootstrap.com/css/#forms" target="_blank">form horizontal</a>. <a href="code-login.txt" target="_blank">Code ici en secours</a> ;</li>
+                <li>L'en-tête : <a href="http://getbootstrap.com/components/#jumbotron" target="_blank">Jumbotron</a> ;</li>
+                <li>Une deuxième page avec un tableau : <a href="http://getbootstrap.com/css/#tables" target="_blank">Tables</a>.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default" id="bootstrap-css">
+        <div class="panel-heading">
+            <h3 class="panel-title">d. Un peu de CSS</h3>
+        </div>
+        <div class="panel-body">
+            Il va falloir :
+            <ul>
+                <li>Ajouter des class ou des id aux éléments ;</li>
+                <li>Ajouter des propriétés de style css à ces class ou id dans notre fichier css <code>style.css</code>.</li>
+            </ul>
+            Objectifs :
+            <ol>
+                <li>Mettre une image de fond à l'en-tête (dossier <code>images</code>) ;</li>
+                <li>Changer la couleur du titre ;</li>
+                <li>Ajouter une image à un article.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default" id="bootstrap-embed">
+        <div class="panel-heading">
+            <h3 class="panel-title">e. En 2015 il est plaisant d'ajouter une vidéo YouTube/une musique SoundCloud</h3>
+        </div>
+        <div class="panel-body">
+            On a de la chance :-) !<br /><br />
+            <a href="https://www.youtube.com/watch?v=wTcNtgA6gHs" target="_blank">Une vidéo YouTube</a> ; <a href="https://soundcloud.com/madeon/pay-no-mind" target="_blank">une musique SoundCloud</a>.
+        </div>
+    </div>
+    <br /><br />
+    <div class="panel panel-default" id="summary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Pour résumer</h3>
+        </div>
+        <div class="panel-body">
+            HTML, CSS, Bootstrap, Google.<br /><br />
+            <ul>
+                <li><a href="http://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Tuto HTML/CSS</a> ;</li>
+                <li><a href="http://openclassrooms.com/courses/prenez-en-main-bootstrap" target="_blank">Tuto Bootstrap</a> ;</li>
+                <li><a href="http://getbootstrap.com/" target="_blank">Le site de Bootstrap</a> ;</li>
+                <li><a href="http://google.com" target="_blank">Un moteur de recherche</a>.</li>
+            </ul>
+        </div>
+    </div>
+</div>
