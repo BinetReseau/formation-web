@@ -10,8 +10,8 @@
 angular.module('fBrweb1App')
   .controller('MainCtrl', function ($scope, $http, $location) {
     $scope.email = "";
-    $scope.connexion = function() {
-        $http.get('connexion.php?mail=' + $scope.email).
+    $scope.connexion = function(email) {
+        $http.get('connexion.php?mail=' + email).
           success(function(data, status, headers, config) {
             $location.path('/cours');
           }).
