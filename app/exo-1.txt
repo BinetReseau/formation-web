@@ -1,0 +1,16 @@
+<h3>Liste des membres</h3>
+<table>
+    <tr>
+        <th>Prénom</th>
+        <th><a href="http://fr.wikipedia.org/wiki/Courrier_%C3%A9lectronique">Email</a></th>
+    </tr>
+    <tr>
+        <td><u>Eric</u></td>
+        <td>
+            <ul>
+                <li>eric@polytechnique.edu</li>
+                <li>eric@melix.net</li>
+            </ul>
+        </td>
+    </tr>
+</table>

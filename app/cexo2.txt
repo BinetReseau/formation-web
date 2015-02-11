@@ -1,0 +1,22 @@
+body {
+    margin-left: 50px;
+}
+table {
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+}
+td {
+    border: 1px solid blue;
+    padding: 4px;
+}
+th {
+    border: 1px solid blue;
+    text-align: center;
+    padding: 4px;
+    font-variant: small-caps;
+}
+.gros {
+    font-size: 20px;
+    color: red;
+}
