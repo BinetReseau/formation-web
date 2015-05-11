@@ -6,48 +6,88 @@
             </div>
 
             <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li class="dropdown" dropdown>
-                    <a href class="dropdown-toggle" dropdown-toggle>
-                        1. HTML
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#/cours?scrollTo=html-outils">a. Les outils</a></li>
-                        <li><a href="#/cours?scrollTo=html-structure">b. Structure d'une page</a></li>
-                        <li><a href="#/cours?scrollTo=html-balises">c. Balises de base</a></li>
-                        <li><a href="#/cours?scrollTo=html-exo">d. Premier code</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown" dropdown>
-                    <a href class="dropdown-toggle" dropdown-toggle>
-                        2. CSS
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#/cours?scrollTo=css-classid">a. class/id</a></li>
-                        <li><a href="#/cours?scrollTo=css-proprietes">b. Propriétés de base</a></li>
-                        <li><a href="#/cours?scrollTo=css-exo">c. Exercice</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown" dropdown>
-                    <a href class="dropdown-toggle" dropdown-toggle>
-                        3. Bootstrap
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#/cours?scrollTo=bootstrap-presentation">a. Présentation</a></li>
-                        <li><a href="#/cours?scrollTo=bootstrap-grille">b. La grille</a></li>
-                        <li><a href="#/cours?scrollTo=bootstrap-construire">c. Codons !</a></li>
-                        <li><a href="#/cours?scrollTo=bootstrap-css">d. Un peu de CSS</a></li>
-                        <li><a href="#/cours?scrollTo=bootstrap-embed">e. Inclure du contenu</a></li>
-                    </ul>
-                </li>
-              </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown" dropdown>
+                        <a href class="dropdown-toggle" dropdown-toggle>
+                            1. Internet
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/cours?scrollTo=internet-fonctionnement">a. Le fonctionnement</a></li>
+                            <li><a href="#/cours?scrollTo=internet-http">b. Le protocole HTTP</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" dropdown>
+                        <a href class="dropdown-toggle" dropdown-toggle>
+                            2. HTML
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/cours?scrollTo=html-outils">a. Les outils</a></li>
+                            <li><a href="#/cours?scrollTo=html-structure">b. Structure d'une page</a></li>
+                            <li><a href="#/cours?scrollTo=html-balises">c. Balises de base</a></li>
+                            <li><a href="#/cours?scrollTo=html-exo">d. Premier code</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" dropdown>
+                        <a href class="dropdown-toggle" dropdown-toggle>
+                            3. CSS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/cours?scrollTo=css-classid">a. class/id</a></li>
+                            <li><a href="#/cours?scrollTo=css-proprietes">b. Propriétés de base</a></li>
+                            <li><a href="#/cours?scrollTo=css-exo">c. Exercice</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" dropdown>
+                        <a href class="dropdown-toggle" dropdown-toggle>
+                            4. Bootstrap
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/cours?scrollTo=bootstrap-presentation">a. Présentation</a></li>
+                            <li><a href="#/cours?scrollTo=bootstrap-grille">b. La grille</a></li>
+                            <li><a href="#/cours?scrollTo=bootstrap-construire">c. Codons !</a></li>
+                            <li><a href="#/cours?scrollTo=bootstrap-css">d. Un peu de CSS</a></li>
+                            <li><a href="#/cours?scrollTo=bootstrap-embed">e. Inclure du contenu</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </nav>
 
+
 <div class="col-md-12">
-    <h1>1. HTML</h1>
+    <h1>1. Internet</h1>
+    <div class="panel panel-default" id="internet-fonctionnement">
+        <div class="panel-heading">
+            <h3 class="panel-title">a. Le fonctionnement</h3>
+        </div>
+        <div class="panel-body">
+            <img src="images/schema-internet.svg" />
+        </div>
+    </div>
+    <div class="panel panel-default" id="internet-http">
+        <div class="panel-heading">
+            <h3 class="panel-title">b. Le protocole HTTP</h3>
+        </div>
+        <div class="panel-body">
+            <pre>
+Requête à 193.51.224.148 :
+GET http://www.google.fr/ HTTP/1.1
+
+Réponse :
+HTTP/1.0 200 OK
+
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Google&lt;/title&gt;
+[...]
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <h1>2. HTML</h1>
     <div class="panel panel-default" id="html-outils">
         <div class="panel-heading">
             <h3 class="panel-title">a. Les outils</h3>
@@ -130,7 +170,7 @@
     </div>
     <br /><br />
 
-    <h1>2. CSS</h1>
+    <h1>3. CSS</h1>
     <div class="panel panel-default" id="css-classid">
         <div class="panel-heading">
             <h3 class="panel-title">a. class/id</h3>
@@ -217,7 +257,7 @@
     </div>
     <br /><br />
 
-    <h1>3. Bootstrap : comment faire un site propre sans effort</h1>
+    <h1>4. Bootstrap : comment faire un site propre sans effort</h1>
     <div class="panel panel-default" id="bootstrap-presentation">
         <div class="panel-heading">
             <h3 class="panel-title">a. Présentation</h3>
